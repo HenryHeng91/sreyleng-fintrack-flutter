@@ -1,0 +1,35 @@
+<div class="flex flex-col h-screen overflow-hidden">
+  <!-- Main Content Area -->
+  <main class="flex-1 overflow-y-auto pb-24">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- iOS Bottom Tab Bar -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white/80 ios-blur border-t border-black/10 safe-area-bottom z-50">
+    <div class="flex justify-around items-center h-16 px-4">
+      <a routerLink="/transactions" routerLinkActive="text-ios-blue" [routerLinkActiveOptions]="{exact: true}" class="flex flex-col items-center space-y-1 text-ios-secondary">
+        <mat-icon class="text-[24px]">list_alt</mat-icon>
+        <span class="text-[10px] font-medium">Transactions</span>
+      </a>
+      
+      <a routerLink="/dashboard" routerLinkActive="text-ios-blue" class="flex flex-col items-center space-y-1 text-ios-secondary">
+        <mat-icon class="text-[24px]">bar_chart</mat-icon>
+        <span class="text-[10px] font-medium">Dashboard</span>
+      </a>
+
+      <a routerLink="/add" class="flex items-center justify-center w-12 h-12 bg-ios-blue text-white rounded-full shadow-lg -mt-8 border-4 border-ios-bg">
+        <mat-icon class="text-[28px]">add</mat-icon>
+      </a>
+
+      <a routerLink="/accounts" routerLinkActive="text-ios-blue" class="flex flex-col items-center space-y-1 text-ios-secondary">
+        <mat-icon class="text-[24px]">account_balance_wallet</mat-icon>
+        <span class="text-[10px] font-medium">Accounts</span>
+      </a>
+
+      <a routerLink="/settings" routerLinkActive="text-ios-blue" class="flex flex-col items-center space-y-1 text-ios-secondary">
+        <mat-icon class="text-[24px]">settings</mat-icon>
+        <span class="text-[10px] font-medium">Settings</span>
+      </a>
+    </div>
+  </nav>
+</div>
