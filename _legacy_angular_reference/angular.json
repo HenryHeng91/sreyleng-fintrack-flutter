@@ -21,7 +21,7 @@
           "builder": "@angular/build:application",
           "options": {
             "define": {
-              "GEMINI_API_KEY": "'AIzaSyD9ux_1i33QJA2xP9uGMvl_w1o-D2O0Khw'"
+              "GEMINI_API_KEY": ""
             },
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
