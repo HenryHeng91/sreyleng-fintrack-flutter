@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265231719413",
+    "project_id": "sreyleng-fitrack",
+    "storage_bucket": "sreyleng-fitrack.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265231719413:android:f4b6877cf5fac308515ebc",
+        "android_client_info": {
+          "package_name": "com.hengsiekhai.sreyleng_fintrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf-gE1xvneQvFMf6TQTAlu4SYLdQq2XA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

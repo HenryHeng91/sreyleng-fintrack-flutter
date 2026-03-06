@@ -1,0 +1,84 @@
+# generated: 2026-03-06
+# project: sreyleng-fintrack-flutter
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: d:\Source code\sreyleng-fintrack-flutter\_bmad-output\implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-03-06
+project: sreyleng-fintrack-flutter
+project_key: NOKEY
+tracking_system: file-system
+story_location: "d:\\Source code\\sreyleng-fintrack-flutter\\_bmad-output\\implementation-artifacts"
+
+development_status:
+  # Epic 1: Secure Access & Core Navigation
+  epic-1: in-progress
+  1-1-project-initialization-secure-foundation: done
+  1-2-google-sign-in-authentication-state: backlog
+  1-3-enforce-strict-user-allowlist: backlog
+  1-4-core-app-navigation-shell: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: Manual Transaction Management
+  epic-2: backlog
+  2-1-transaction-data-layer-offline-readiness: backlog
+  2-2-add-transaction-form-appsheet-parity: backlog
+  2-3-transaction-list-offline-indicator: backlog
+  2-4-account-summary-view: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: Financial Insights & Reporting
+  epic-3: backlog
+  3-1-global-filter-state-management: backlog
+  3-2-earn-expense-pie-charts: backlog
+  3-3-by-account-trend-line-charts: backlog
+  3-4-by-month-rollup-view: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: AI-Powered Data Entry Automation
+  epic-4: backlog
+  4-1-gemini-ai-service-receipt-processing-foundation: backlog
+  4-2-single-receipt-ocr-smart-scan: backlog
+  4-3-aba-digital-receipt-native-share-intent: backlog
+  4-4-batch-statement-ai-extraction: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Reminders & Settings
+  epic-5: backlog
+  5-1-local-push-notification-reminders: backlog
+  5-2-settings-preferences-view: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Legacy System Synchronization (Deferred Feature)
+  epic-6: backlog
+  6-1-ms-graph-api-integration-2-way-sync-engine: backlog
+  epic-6-retrospective: optional

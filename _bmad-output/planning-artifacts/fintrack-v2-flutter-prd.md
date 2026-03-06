@@ -1,7 +1,7 @@
 ---
 title: "FinTrack V2 (Flutter) - Product Requirements Document"
-status: "Draft"
-last_updated: "2026-02-28"
+status: "Approved"
+last_updated: "2026-03-06"
 ---
 
 # FinTrack V2 (Flutter) - Product Requirements Document
@@ -26,7 +26,7 @@ The core problem with the existing AppSheet version is the friction of manual da
 - **Strict Allowlist**: Only predefined Google accounts (the developer and his wife) are permitted to log in. Any other Google account must be rejected at the authentication layer.
 
 ### 4.2 UI/UX Parity (AppSheet Inspiration)
-- The layout must closely mimic the provided AppSheet screenshots to ensure zero learning curve.
+- **AppSheet Design Reference**: For UI/UX, refer to the existing AppSheet design screenshots in `d:\Source code\sreyleng-fintrack-flutter\_bmad-output\appsheet version\screenshots appsheet`. The layout must closely mimic these provided AppSheet screenshots to ensure zero learning curve. Ensure the new design references it and improves upon it.
 - **Offline Indicator**: If the device loses internet connection, a non-intrusive red counter/indicator must appear in the top right, showing the number of transactions pending sync to the server. The user must be able to continue adding transactions seamlessly while offline.
 - **Global Filtering**: A global filter panel (accessible from the top) must be implemented. Applying a filter (e.g., by Account, Date, Source, Month, Year) must filter *both* the transaction list and all Dashboard widgets simultaneously.
 - **Navigation Tabs**: The bottom or top navigation must explicitly include the following tabs: Transactions, Dashboard, Add, **Account**, and **By Month** (matching the AppSheet structure).
@@ -38,8 +38,9 @@ The core problem with the existing AppSheet version is the friction of manual da
 - **Batch Statement OCR**: Allow uploading a credit card statement image to extract a batch of transactions (Amount, Description, Category, Date, Type) for bulk preview and confirmation.
 - **ABA Digital Receipt Sharing**: Register the app as a target in the Android Share Sheet. Sharing an ABA receipt to FinTrack must instantly trigger the OCR and open the pre-filled Raw Data Form.
 
-### 4.4 Data Migration & 2-Way Sync
-- **Real-time Excel/AppSheet Sync**: The new Flutter app must synchronize data in real-time (two-way) with the existing `Family Saving and Expense.xlsx` file. If the secondary user adds a transaction via the old AppSheet app, it must appear immediately in the Flutter app, and vice versa. This requires a robust backend sync mechanism bridging Firestore and the Microsoft Graph API.
+### 4.4 Data Migration & 2-Way Sync *(Deferred — Post-MVP)*
+- **Real-time Excel/AppSheet Sync** *(Deferred)*: The new Flutter app must synchronize data in real-time (two-way) with the existing `Family Saving and Expense.xlsx` file. If the secondary user adds a transaction via the old AppSheet app, it must appear immediately in the Flutter app, and vice versa. This requires a robust backend sync mechanism bridging Firestore and the Microsoft Graph API.
+- **⚠️ Deferral Reason**: Firebase Spark Plan (free tier) does not support outbound networking from Cloud Functions, making MS Graph API integration infeasible in v1. This feature is deferred to post-MVP when a paid plan (Blaze) may be adopted. Full migration to Firestore is the chosen path for v1.
 
 ### 4.5 Notifications
 - **Monthly Summary Reminder**: Implement a locally scheduled push notification that fires on a specific day of the month (default: the 28th) reminding the user to review their monthly financial summary.
